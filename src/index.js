@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 //import App from './App';
 //import App from './UseState';
-import App from './todoState';
+//import App from './todoState';
 //import App from './Use-Effect';
+import NoteApp from './Components/NoteApp'
+
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NoteApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
