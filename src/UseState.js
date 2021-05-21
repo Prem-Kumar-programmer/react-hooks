@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-//      Add -1 and reset button to component
+//      Adding -1 and reset button to component
 //
 //  initial count to be configured using a count prop (default to 0)
 //  Add "-1" button to reduce count by 1

@@ -1,6 +1,10 @@
-import React , {useEffect} from 'react'
+import React , { useEffect} from 'react'
 
-const Note = ({ note, removeNote }) => {
+
+const Note = ({ note , removeNote }) => {
+
+    
+
     useEffect(() => {
         console.log('Setting up effect!')
 

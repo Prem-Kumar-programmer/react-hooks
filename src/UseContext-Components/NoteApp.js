@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import AddNoteForm from './AddNote'
 import NoteList from './NoteList'
+import NotesContext from './NotesContext'
 
 const NoteApp = () => {
+
+
+
+
+
     const [notes, setNotes] = useState([])
    
    
@@ -23,11 +29,11 @@ const NoteApp = () => {
     }, [notes])
 
     return (
-        <div>
+        <NotesContext.Provider value={{ notes , setNotes }}>
             <h1>Notes</h1>
-            <NoteList notes={notes} removeNote={removeNote} />
-            <AddNoteForm setNotes={setNotes} notes={notes} />
-        </div>
+            <NoteList removeNote={removeNote}/>
+            <AddNoteForm />
+        </NotesContext.Provider>
     )
 }
 

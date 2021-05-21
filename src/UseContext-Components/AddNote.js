@@ -1,6 +1,10 @@
-import React , { useState } from 'react'
+import React , { useState , useContext } from 'react'
+import NotesContext from './NotesContext'
 
-const AddNoteForm = ({ setNotes , notes }) =>{
+const AddNoteForm = () =>{
+
+    const {notes} = useContext(NotesContext)
+    const {setNotes} = useContext(NotesContext)
 
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')

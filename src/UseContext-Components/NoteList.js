@@ -1,7 +1,11 @@
-import React from 'react'
+import React , { useContext } from 'react'
 import Note from './Note'
+import NotesContext from './NotesContext'
 
-const NoteList = ({ notes , removeNote }) => {
+const NoteList = ( {removeNote} ) => {
+
+    const {notes} = useContext(NotesContext)
+
      return (
          <div>
              
